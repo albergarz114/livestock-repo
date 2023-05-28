@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            body {
+                margin: 0;
+                background: black;
+                height: 100vh;
+                display: grid;
+                place-items:center;
+                color: lightsalmon;
+                font-family: monospace;
+                font-size: 24px;
+            }
+
+            #backend{
+                scale:-1;
+            }
+
+            div{
+                text-align: center;
+            }
+            
+            @keyframes rotate{
+                0% {rotate: 0deg;}
+                50% {rotate: 180deg;}
+                100% {rotate: 360deg;}
+            }
+            
+            main{
+                animation: rotate 10s infinite;
+            }
+
+            /* css comment */
+        </style>
+    </head>
+    <body>
+        <main>
+            <div>Frontend</div>
+            <!-- https://emojipedia.org/red-apple/ -->
+            <div>🍎</div>
+            <div id="backend">Backend</div>
+        </main>
+    </body>
+</html>

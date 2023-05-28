@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Enter name</title>
+    <script>
+        function submitForm(){
+            var name= document.getElementById("inputtext").value;
+            alert("Form submitted! name:" + name)
+            return false; // Prevent form submission
+        }
+        
+</script>
+</head>
+<body>
+    <form>
+        <label>Enter Your Name</label><br>
+        <input type="text" name="username"> </form>
+    <p>
+        <label>
+            Username : <input type="text" name="username">
+        </label>
+    </p>
+    <p>
+        <label > password : <input type="password" name="password"></label>
+    </p>
+    <p>
+        <input type="radio"
+        name="Gender" value="Male"> Male
+
+        <input type="radio"
+        name="Gender" value="Female"> Female
+    </p>
+    <p>
+        Choose colors:<br>
+        <li><input type="checkbox" name:"color" value="red">Red</li>
+        <li><input type="checkbox" name:"color" value="blue">Blue</li>
+        <li><input type="checkbox" name:"color" value="green">Green</li>
+    </p>
+    <button type="submit">submit</button>
+</form>
+<button> Creates a clickable </button>
+
+    <form onsubmit="return submitForm()">
+        <label>Enter your name</label>
+        <input type="text" id="inputtext" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
